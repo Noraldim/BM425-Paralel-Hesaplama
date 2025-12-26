@@ -3,7 +3,7 @@ import time
 
 bry = Barrier(2)
 def bariyerde_bekle(isim, sure):
-    for _ in range(10):
+    for _ in range(2):
         print(f"{isim} threadi basladi....")
         time.sleep(sure)
         print(f"{isim} threadi bariyerde bekliyor...")

@@ -7,7 +7,7 @@ thread_sayisi = 4
 bry = Barrier(thread_sayisi, action=son_islem)
 
 def bariyerde_bekle(isim):
-    for i in range(10):
+    for i in range(4):
         print(f"{isim} veriyi yukluyor...")
         time.sleep(1 + (isim * 0.5))
         bry.wait()

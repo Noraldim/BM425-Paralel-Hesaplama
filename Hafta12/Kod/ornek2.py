@@ -7,13 +7,16 @@ def worker(q):
         # 3 saniye veri bekle, gelmezse hata ver
         data = q.get(timeout=3)
         print(f"Worker veriyi aldı: {data}")
+        
+        print(f"Worker veriyi aldı: {data}")
     except queue.Empty:
         print("Kuyruk boş! Süre doldu, worker kapanıyor.")
     except Exception as e:
         print(e)
 def queue_add(q):
-    time.sleep(5)
+    time.sleep(1)
     q.put("Deneme")
+    q.put("test2")
 
 if __name__ == "__main__":
     q = multiprocessing.Queue()

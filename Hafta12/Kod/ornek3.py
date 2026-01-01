@@ -26,6 +26,6 @@ if __name__ == "__main__":
         
     print("Tüm işlerin bitmesi bekleniyor...")
     # Kuyruktaki tüm işler için task_done() gelene kadar bekle
-    #jq.join()
+    jq.join()
     
     print("Tüm işler tamamlandı! Program kapanıyor.")

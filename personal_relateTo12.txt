@@ -1,0 +1,5 @@
+speak about the diff between queue and and pipe
+three method 
+-
+-
+-
